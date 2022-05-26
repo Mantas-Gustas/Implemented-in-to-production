@@ -84,7 +84,7 @@ def tab():
     
 def backspace():
     py.press('backspace')
-    time.sleep(0.5)
+    time.sleep(0.05)
     
 def space():
     py.keyDown('space')
@@ -99,17 +99,17 @@ def A():
     py.keyDown('A')
     time.sleep(0.02)
     py.keyUp('A')
-    tab()
+    py.press('tab')
     py.keyDown('M')
     time.sleep(0.02)
     py.keyUp('M')
-    tab()
+    py.press('tab')
     
 def P():
     py.keyDown('P')
     time.sleep(0.02)
     py.keyUp('P')
-    tab()
+    py.press('tab')
     
 def f34a4():
     f3()
@@ -123,7 +123,7 @@ def f3():
 
 def cf3():
     py.hotkey('ctrl', 'f3')
-    time.sleep(0.01)
+    time.sleep(0.5)
     
 def f4():
     py.press('f4')
@@ -158,6 +158,7 @@ def O():
 # -======= VAS FUNCTIONS ========- 
                
 def dett_butt():
+    time.sleep(0.1)
     py.click(details_but_png)
     time.sleep(0.1)
     py.click(buttons_but_png)
